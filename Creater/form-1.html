@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+    .use-form{
+        width: 350px;
+        border-radius: 10px;
+        margin: 50px auto;
+    }
+    /* label{
+        margin: 10px;
+    } */
+    /* .form{
+        margin: 10px;
+    } */
+    input{
+        margin: 10px;
+        height: 20px;
+        /* padding: 5px; */
+        border: none;
+        background-color: rgba(174, 223, 243, 0.445);
+        border-radius: 5px;
+    }
+    a{
+        padding: 5px 20px;
+        background-color: rgba(174, 223, 243, 0.445);
+        border-radius: 10px;
+        text-decoration: none;
+    }
+</style>
+
+</head>
+<body>
+    <div class="use-form">
+    <fieldset> 
+        <legend>User Information</legend>
+            <form action="Form" class="form">
+                <label for="Name" class="form">Enter Full name</label><br>
+                <input type="text" class="form" required placeholder="Rahul Kumar">
+                <br>
+                <label for="Email" class="form">Enter Your Email</label><br>
+                <input type="email" class="form" placeholder="greek@gmail.com"><br>
+                <label for="password" class="form">Enter your Password</label><br>
+                <input type="password" class="form" required placeholder="enter password" accept="[A-Z]*[a-z]*[9-0]"><br>
+                <label for="Conform-password" class="form">Conform Password</label><br>
+                <input type="password" class="form" placeholder="Conform password" accept="[A-Z]*[a-z]*[9-0]"><br>
+                <label for="redio" class="form">Enter ur gender</label><br>
+                <input type="radio" name="gender" class="form">Male
+                <input type="radio" name="gender" class="form">Female
+                <input type="radio" name="gender" class="form">Orther <br>
+                <label for="dbd" class="form">Enter Birth date</label><br>
+                <input type="date" class="form"><br>
+                <label for="address" class="form">Enter Address</label><br>
+                <input type="textarea" class="form"><br>
+                <a href="">Submit</a>
+            </form>
+        </div>
+    </fieldset>
+</body>
+</html>

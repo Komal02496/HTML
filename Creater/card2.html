@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .card {
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: all 500ms;
+      }
+      .card .box {
+        height: 100px;
+        background-color: rgb(31, 8, 235);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+       /* .card .box .profile{
+           background-size: 200px;
+           position: relative;
+           height: 80px;
+           width: 80px;
+           border-radius: 50%;
+           background-color: blue;
+           padding: 3px;
+      }  */
+      .card .box .profile .profile-img {
+        height: 90px;
+        width: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid whitesmoke;
+        margin-top: 5px;
+        padding: 1px;
+      }
+      .card .contant .cod{
+       font-weight: 600;
+       font-size: 25px;
+       /* position: relative; */
+       
+      }
+      .card .contant .you {
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .card .contant .btn button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: aliceblue;
+        border: none;
+        border-radius: 30px;
+        margin: 10px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .card .contant .btn button:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 400ms;
+      }
+      .card .contant .feedback {
+        margin: 30px;
+        margin-top: 10px;
+        font-size: 18px;
+
+      }
+      .card .contant .feedback .like,
+      .card .contant .feedback .comment,
+      .card .contant .feedback .share {
+        padding: 5px;
+      }
+      .card .contant .icon .fa-brands{
+        margin: 5px;
+        margin-top: 10px;
+        font-size: 20px;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="box">
+        <div class="profile">
+          <img
+            class="profile-img"
+            src="https://img.freepik.com/free-photo/handsome-bearded-guy-looking-wearing-outdoor-clothes_176420-18777.jpg?t=st=1718888027~exp=1718891627~hmac=e2c8173b7556a76b01ba0b4a7173332214c40cf3607a015de3fc870c85dc9ba6&w=740"
+            alt=""
+           
+          />
+        </div>
+      </div>
+      <div class="contant">
+        <span class="cod">CodingLab</span><br>
+       <span class="you">YouTuber & blogger</span> 
+        <div class="icon">
+          <i class="fa-brands fa-facebook" ></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="btn">
+          <button>Subscribe</button>
+          <button>Message</button>
+        </div>
+        <div class="feedback">
+          <span class="like"><i class="fa-solid fa-heart"></i> 20k</span>
+          <span class="comment"><i class="fa-solid fa-comment"></i> 12.4k</span>
+          <span class="share"
+            ><i class="fa-solid fa-share-from-square"></i> 60.4k</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://picsum.photos/id/16/1200/700') no-repeat center center;
+  background-size: cover;
+  
+}
+.frame{
+  width: 140px;
+  height: 200px;
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.example1{
+  backdrop-filter: blur(6px);
+}
+.example2{
+  backdrop-filter: grayscale(70%);
+}
+.example3{
+  backdrop-filter: saturate(6);
+}
+.example4{
+  backdrop-filter: sepia(60%);
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  padding: 8px;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="frame example1">
+		  <h4 class="text">blur(6px);</h4>
+		</div>
+		<div class="frame example2">
+		  <h4 class="text">grayscale(70%);</h4>
+		</div>
+		<div class="frame example3">
+		  <h4 class="text">saturate(6);</h4>
+		</div>
+		<div class="frame example4">
+		  <h4 class="text">sepia(60%);</h4>
+		</div>
+	  </div>
+</body>
+</html>

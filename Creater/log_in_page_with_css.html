@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        h2{
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            margin: 30px;
+            color: aliceblue;
+        }
+        body{
+            background-size: cover;
+            background-image: url(https://img.freepik.com/free-photo/lush-forest-background-framing-natural-scene_91128-4419.jpg?t=st=1720088445~exp=1720092045~hmac=6b7e16b5d84fa12f00bd7d21604d87d411290198372ca14f7b2988bc36445f8d&w=900);
+        }
+        .card{
+            width: 380px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            margin: 100px auto;
+            padding: 10px;
+            display: flex;
+            /* backdrop-filter: blur(4px); */
+            justify-content: center;
+            align-items: center;
+            text-align: center;    
+        }
+        .Email , .Password{
+            margin: 10px;
+            height: 40px;
+            width: 300px;
+            border-radius: 10px;
+            border: none;
+            background-color: transparent;
+            padding-left: 10px;
+            backdrop-filter: blur(20px);
+        }
+           .Email::placeholder,.Password::placeholder{
+            color: rgba(240, 248, 255, 0.74);
+        }
+           a{
+            margin-left: 180px;
+            color: aliceblue;
+        }
+           button{
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+           .fa-solid{
+                color: aliceblue;
+                font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="loging-form">
+            <h2>LOG IN</h2>
+            <form action="">
+                <i class="fa-solid fa-envelope"></i> <input type="email" class="Email" placeholder="Enter Email id"><br>
+                <i class="fa-solid fa-lock"></i> <input type="password" name="" id="" class="Password" placeholder="Enter password">
+                <br>
+                <a href="">Forgot Password</a><br>
+                <button>Log In</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

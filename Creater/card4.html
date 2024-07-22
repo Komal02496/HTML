@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body{
+        
+        background-image: linear-gradient(to left, #2924b3, #5d25c4, #8723d3, #af1ee0, #d612eb);
+        
+      }
+      .card {
+        width: 300px;
+      
+        margin: 50px auto;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 20px;
+        background-color: aliceblue;
+      }
+      .card .tab-bar img {
+        height: 40px;
+        width: 40px;
+        margin-top: 2px;
+        display: inline;
+      }
+      .card .tab-bar i{
+       
+        font-size: 18px;
+        margin-left: 200px;
+       
+      }
+
+
+      .card img {
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        margin:  auto;
+      }
+      .card .content{
+        font-size: 22px;
+        margin-top: 20px;
+        font-weight: 600;
+        
+      }
+      .card .content p {
+        font-size: 13px;
+        margin-top: 3px;
+        font-weight: 300;
+      }
+
+      .card .rating{
+        margin-top: 5px;
+      }
+
+      .card .color{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 15px;
+        
+
+      }
+      
+      .card .price{
+        margin-left: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      button{
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        color: aliceblue;
+        background-image: linear-gradient(to right top, #2924b3, #5d25c4, #8723d3, #af1ee0, #d612eb);
+        display: block;
+        margin: 15px auto;
+        transition: all 400ms;
+
+      }
+      button:hover{
+        box-shadow: rgba(75, 15, 15, 0.24) 0px 3px 8px;
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="tab-bar">
+        <img src="Image/exercise.png" alt="" />
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <img
+        src="https://img.freepik.com/free-photo/close-up-futuristic-sneakers_23-2151005654.jpg?t=st=1719315815~exp=1719319415~hmac=1485412490aff94898bb9cf46e2369236dde30c07e8238a97aebbac477d57a95&w=360"
+        alt=""
+      />
+      <div class="content">
+        ADDIDAS GAZE ZX
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
+          veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Expedita, mollitia?
+        </p>
+      </div>
+
+      <div class="rating">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+        ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+        ><i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+       <div class="price">$ 2000.00 </div>
+     
+      <button>Add to Cart</button>
+    </div>
+  </body>
+</html>

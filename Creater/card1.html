@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+      
+        .card{
+            margin: auto;
+            height: fit-content;
+            width: 300px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 15px;
+            padding-top: 1px;            
+        }
+        .box{
+            height: 250px;
+            border: 1px solid blue;
+            border-bottom-right-radius: 70%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: blue;
+            margin: 10px;
+        }
+
+        .card .cantent button{
+            padding: 10px 20px;
+            border: none;
+            color: aliceblue;
+            background-color: rgb(26, 26, 216);
+            border-radius: 5px;           
+
+        }
+        .card .cantent {
+            text-align: center;
+            padding: 15px;
+        }
+        .card .cantent button:hover{
+            background-color: rgb(67, 67, 163);
+            color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        .card:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transform: translateY(-5px);
+
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="box">
+
+        </div>
+        <div class="cantent">
+           <h2>C++</h2> 
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptatibus iure
+                minima veritatis eligendi possimus! Accusamus ea et sed repellendus
+                alias non, sequi similique animi aut, fuga nam quas corporis nostrum,
+                doloribus beatae fugit totam labore tempora omnis. Odio maxime impedit 
+                nisi quam ratione quidem possimus rem sit soluta minus!
+            </p>
+            <button>Code</button>
+        </div>
+    </div>
+</body>
+</html>
