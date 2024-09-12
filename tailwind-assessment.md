@@ -106,11 +106,11 @@
     <title>Table</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="table-title font-bold text-2xl mx-auto my-5 text-center">
+<body class="border-4 border-slate-600 w-[800px] mx-auto my-7">
+    <div class="table-title font-bold text-2xl mx-auto my-5 text-left ps-16">
         Basic Table
     </div>
-    <div class="table-title font-medium text-gray-500 text-xl mx-auto my-5 text-center">
+    <div class="table-title font-medium text-gray-500 text-xl mx-auto my-5 text-left ps-16">
         Basic Table with card
     </div>
     <table class="table-auto mx-auto my-10">
