@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <style>
+        .image-gallery{
+            width: fit-content;
+            margin: 40px auto;
+            display: grid;
+            grid-template-rows: repeat(4,250px);
+            grid-template-columns: repeat(4,250px);
+            gap: 10px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: all 500ms;
+        }
+        img:hover{
+            transform: scale(0.9);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        img:nth-child(1){
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        img:nth-child(2){
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        img:nth-child(3)
+        {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        img:nth-child(4)
+        {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        img:nth-child(5)
+        {
+            grid-row: 2/4;
+            grid-column: 2/4;
+        }
+        img:nth-child(6){
+            grid-row: 2/3;
+            grid-column: 4/5;
+
+        }
+        img:nth-child(7)
+        {
+            grid-row: 4/5;
+            grid-column: 1/3;
+        }
+        img:nth-child(8){
+            grid-row: 4/4;
+            grid-column: 3/4;
+        }
+        img:nth-child(9)
+        {
+            grid-row: 3/5;
+            grid-column: 4/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <img src="https://img.freepik.com/free-photo/decorative-pom-poms-used-decorations-around-house_23-2149449954.jpg?t=st=1722495239~exp=1722498839~hmac=45289ccf08bcea73717fb15f872759eba4f208223a06e4c9bd1f24f0cec83dd7&w=360" alt="">
+        <img src="https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13190.jpg?t=st=1722495405~exp=1722499005~hmac=28339abfb79e898fd32146121530427bd764b025234c8fc16e838b608efe7bb7&w=360" alt="">
+        <img src="https://img.freepik.com/free-photo/cute-cat-spending-time-indoors_23-2150649172.jpg?t=st=1722495531~exp=1722499131~hmac=06fdad365beb4bca50968ddca6ff3bf5644dada918b5d8564570913599690660&w=740" alt="">
+        <img src="https://img.freepik.com/free-photo/light-brown-dog-mal-shih-breed-front-white-wall_181624-26897.jpg?t=st=1722495638~exp=1722499238~hmac=a64a089334ca45bf63af60ba8a55255758f4a4ca7f98a39477defe7295b60e12&w=740" alt="">
+        <img src="https://img.freepik.com/free-photo/vertical-shot-sitting-shih-poo-house_181624-34995.jpg?t=st=1722495686~exp=1722499286~hmac=df794d2b7b745f56e5292c336ae987d85f339166bac5a0d06b481cbc21aa9288&w=360" alt="">
+        <img src="https://img.freepik.com/free-photo/close-up-monkey-nature_23-2150822832.jpg?t=st=1722496631~exp=1722500231~hmac=2bcade67802a648106a923535d31c191e6c062e1271036ca2873f4825a643323&w=360" alt="">
+        <img src="https://img.freepik.com/free-photo/view-lion-wild_23-2150374900.jpg?t=st=1722499365~exp=1722502965~hmac=7365d9888bad4733af53ea4a18f4a4df3aebba7b55db238c82b564b6b342151e&w=360" alt="">
+        <img src="https://img.freepik.com/free-photo/black-white-portrait-wild-lion-nature_23-2151609999.jpg?t=st=1722499921~exp=1722503521~hmac=f5faefebf75f5af96073b1e460073c54f24c764948290719e364b30514325532&w=360" alt="">
+        <img src="https://img.freepik.com/free-photo/beautiful-shot-white-british-shorthair-kitten_181624-57681.jpg?t=st=1722499980~exp=1722503580~hmac=4f760e8e9db6ea09572253cf94e6222b617ad253e56ae17d676c2ad854ba4005&w=740" alt="">
+
+    </div>
+</body>
+</html>

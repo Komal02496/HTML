@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loader 2</title>
+    <style>
+        /* .loader{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            clip-path: polygon(1% 0%, 0% 47%, 100% 44%, 100% 0%, 54% 100%);
+        } */
+         img{
+            height: 400px;
+            width: 400px;
+            /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
+            clip-path: circle(50% at 50% 50%);
+            opacity: 0.3;
+            margin: 100px auto;
+            animation-name: scale;
+            animation-duration: 1500ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+         }
+
+         @keyframes scale {
+            to{
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            
+         }
+         .image{
+            width: fit-content;
+            margin: 50px auto;
+         }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="https://img.freepik.com/free-photo/adorable-cat-lifestyle_23-2151593405.jpg?t=st=1722505596~exp=1722509196~hmac=895ef7853d116382f1872977bc9220ab4fd3eea1fa728411f1671c4d47489b1f&w=360" alt="">
+    </div>
+</body>
+</html>

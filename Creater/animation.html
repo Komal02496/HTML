@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .cricle{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: palevioletred;
+            margin: 150px auto;
+            transition: 500ms;
+            animation: push-in-out 1900ms linear infinite;
+        }
+        @keyframes push-in-out {
+            /* form{
+                transform: scale(0.5);
+            }
+            to{
+                transform: scale(1.1);
+            } */
+            0%{
+                transform: scale(0.5);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(0.5);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cricle">
+        
+    </div>
+</body>
+</html>
