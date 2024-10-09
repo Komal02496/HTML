@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .some {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        border: 1px solid red;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="root">
+      <section>This is some section</section>
+      <p>This is line ia already present</p>
+    </div> -->
+
+    <!-- <div class="box">
+      <p>This is already present</p>
+    </div> -->
+    <script>
+      newEle = document.createElement('div');
+      newEle.style.cssText = `
+                  height: 300px;
+                  width: 300px;
+                  background-color: blue;
+                  border-radius: 12px;
+                  margin: 50px auto;`;
+
+      newEle.classList.add('box9');
+      console.log(newEle);
+
+        // const root = document.querySelector('#root');
+        // const p = document.querySelector('p');
+        // root.appendChild(newEle);
+
+        // root.append(newEle);
+        // root.prepend(newEle);
+
+        // root.insertBefore(newEle, p);
+
+        // document.body.appendChild(newEle);
+
+    //   temp = document.querySelector('.box');
+
+    //   box1 = document.createElement('div');
+    //   box1.innerText = 'Inserted using beforebegin';
+    //   box2 = document.createElement('div');
+    //   box2.innerText = 'Inserted using afterbegin';
+    //   box3 = document.createElement('div');
+    //   box3.innerText = 'Inserted using beforeend';
+    //   box4 = document.createElement('div');
+    //   box4.innerText = 'Inserted using afterend';
+
+    //   temp.insertAdjacentElement('beforebegin', box1);
+    //   temp.insertAdjacentElement('afterbegin', box2); // like prepend
+    //   temp.insertAdjacentElement('beforeend', box3); // like append
+    //   temp.insertAdjacentElement('afterend', box4);
+    </script>
+  </body>
+</html>
